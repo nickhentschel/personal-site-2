@@ -1,0 +1,234 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  color: #1abc9c;
+  text-decoration: none; }
+
+a:hover {
+  color: #16a085;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease; }
+
+h2 {
+  font-weight: normal; }
+
+.button {
+  display: block;
+  color: #ecf0f1;
+  background: #48c9b0;
+  text-align: center;
+  padding: 1em 1.5em;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5px;
+  background: #48c9b0;
+  -moz-box-shadow: 0px 5px 0px #1abc9c;
+  -webkit-box-shadow: 0px 5px 0px #1abc9c;
+  box-shadow: 0px 5px 0px #1abc9c; }
+
+.button:hover {
+  color: #ecf0f1;
+  background: #1abc9c;
+  -moz-box-shadow: 0px 5px 0px #16a085;
+  -webkit-box-shadow: 0px 5px 0px #16a085;
+  box-shadow: 0px 5px 0px #16a085; }
+
+p {
+  line-height: 1.8em;
+  padding: 1em 0; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: #ecf0f1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+.column {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4em 1em;
+  text-align: justify; }
+  .column:before, .column:after {
+    content: " ";
+    display: table; }
+  .column:after {
+    clear: both; }
+
+.main-header {
+  background: #2c3e50; }
+  .main-header .column {
+    padding: 2em 1em; }
+    @media screen and (max-width: 550px) {
+      .main-header .column {
+        padding: 0; } }
+  .main-header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .main-header .logo:last-child {
+      margin-right: 0; }
+    .main-header .logo .logo-link {
+      color: #ecf0f1;
+      display: inline-block; }
+    .main-header .logo .logo-text {
+      display: block;
+      background: #1abc9c;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      padding-top: 0.5em;
+      height: 100px;
+      width: 100px;
+      border-radius: 0.2em;
+      font-size: 3.2em;
+      text-align: center;
+      overflow: hidden;
+      text-shadow: 1px 0px 0 #16a085, 1px 1px 0 #16a085, 2px 2px 0 #16a085, 3px 3px 0 #16a085, 4px 4px 0 #16a085, 5px 5px 0 #16a085, 6px 6px 0 #16a085, 7px 7px 0 #16a085, 8px 8px 0 #16a085, 9px 9px 0 #16a085, 10px 10px 0 #16a085, 11px 11px 0 #16a085, 12px 12px 0 #16a085, 13px 13px 0 #16a085, 14px 14px 0 #16a085, 15px 15px 0 #16a085, 16px 16px 0 #16a085, 17px 17px 0 #16a085, 18px 18px 0 #16a085, 19px 19px 0 #16a085, 20px 20px 0 #16a085, 21px 21px 0 #16a085, 22px 22px 0 #16a085, 23px 23px 0 #16a085, 24px 24px 0 #16a085, 25px 25px 0 #16a085, 26px 26px 0 #16a085, 27px 27px 0 #16a085, 28px 28px 0 #16a085, 29px 29px 0 #16a085, 30px 30px 0 #16a085, 31px 31px 0 #16a085, 32px 32px 0 #16a085, 33px 33px 0 #16a085, 37px 37px 0 #16a085, 39px 39px 0 #16a085, 42px 42px 0 #16a085, 45px 45px 0 #16a085; }
+    @media screen and (max-width: 880px) {
+      .main-header .logo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center; }
+        .main-header .logo:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 550px) {
+      .main-header .logo {
+        padding: 1em 0; } }
+  .main-header .mobile-menu {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding-bottom: 1em; }
+    .main-header .mobile-menu:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 550px) {
+      .main-header .mobile-menu {
+        display: inline-block; } }
+  .main-header .desktop-nav-links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin: 0;
+    padding-top: 2.6em; }
+    .main-header .desktop-nav-links:last-child {
+      margin-right: 0; }
+    .main-header .desktop-nav-links li {
+      float: right;
+      padding: 0 1.6em;
+      font-size: 1.2em;
+      display: inline;
+      text-transform: uppercase; }
+      .main-header .desktop-nav-links li a {
+        color: #ecf0f1; }
+      .main-header .desktop-nav-links li a:hover {
+        color: #ecf0f1;
+        border-bottom: 2px solid #16a085; }
+    @media screen and (max-width: 880px) {
+      .main-header .desktop-nav-links {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center;
+        padding-top: 2em; }
+        .main-header .desktop-nav-links:last-child {
+          margin-right: 0; }
+        .main-header .desktop-nav-links li {
+          padding: 0 0.5em;
+          float: none; } }
+    @media screen and (max-width: 550px) {
+      .main-header .desktop-nav-links {
+        display: none; } }
+
+.mobile-nav-links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: none; }
+  .mobile-nav-links:last-child {
+    margin-right: 0; }
+  .mobile-nav-links a {
+    display: block;
+    background: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border-top: 1px dotted #1e2d3d; }
+  .mobile-nav-links a:hover {
+    background: #bdc3c7; }
+  .mobile-nav-links a:last-child {
+    border-top: 1px dotted #1e2d3d; }
+
+.intro {
+  background: #1abc9c;
+  color: #ecf0f1; }
+  .intro .column {
+    padding: 3em 1em;
+    text-align: center; }
+  .intro h1 {
+    font-size: 3em;
+    line-height: 1.5em; }
+    @media screen and (max-width: 880px) {
+      .intro h1 {
+        font-size: 2em; } }
+    @media screen and (max-width: 550px) {
+      .intro h1 {
+        font-size: 1.7em; } }
+
+.about-me {
+  background: #ecf0f1;
+  color: #34495e; }
+
+.about-site {
+  background: #34495e; }
+
+.recent-posts {
+  background: #16a085; }
+  .recent-posts section {
+    overflow: hidden; }
+  .recent-posts article {
+    width: 47%;
+    float: left; }
+  .recent-posts article:nth-child(even) {
+    float: right; }
+  @media screen and (max-width: 675px) {
+    .recent-posts article {
+      width: 100%;
+      float: none; } }
+
+.contact {
+  background: #ecf0f1;
+  color: #34495e; }
+  .contact .column {
+    text-align: center; }
+  .contact .button-holder {
+    width: 20%;
+    margin: 0 auto; }
+
+.main-footer {
+  background: #2c3e50; }
+  .main-footer .column {
+    text-align: center; }
+  .main-footer p {
+    padding: 0.5em 0; }
+  .main-footer [class^="flaticon-"]:before {
+    font-size: 2em; }

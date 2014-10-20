@@ -1,0 +1,310 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// Color variables
+$wet_asphalt: #34495E;
+$midnight_blue: #2C3E50;
+$turquoise: #1ABC9C;
+$green_sea: #16A085;
+$emerald: #2ECC71;
+$clouds: #ECF0F1;
+$concrete: #95A5A6;
+$silver: #BDC3C7;
+$belize: #2980B9;
+$carrot: #FF675B;
+$orange: #F39C12;
+$nephritis: #27AE60;
+$amethyst: #9B59B6;
+$pomegranate: #C0392B;
+$sun_flower: #F1C40F;
+
+// Fonts
+$main_font: 'Open Sans', sans-serif;
+
+// Layouts
+$small: new-breakpoint(max-width 550px 12);
+$medium: new-breakpoint(max-width 675px 12);
+$full: new-breakpoint(max-width 880px 12);
+
+// Transitions
+
+// $main_trans: @include transition(all 0.5s $ease-in-circ);
+
+// defaults
+
+a {
+  color: $turquoise;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $green_sea;
+  @include animation(scale 1.0s ease-in, slide 2.0s ease);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.button {
+  display: block;
+  color: $clouds;
+  background: #48c9b0;
+  text-align: center;
+  padding: 1em 1.5em;
+  // width: 100%;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5px;
+  background: #48c9b0;
+  -moz-box-shadow: 0px 5px 0px $turquoise;
+  -webkit-box-shadow: 0px 5px 0px $turquoise;
+  box-shadow: 0px 5px 0px $turquoise;
+}
+
+.button:hover {
+  color: $clouds;
+  background: $turquoise;
+  -moz-box-shadow: 0px 5px 0px $green_sea;
+  -webkit-box-shadow: 0px 5px 0px $green_sea;
+  box-shadow: 0px 5px 0px $green_sea;
+}
+
+p {
+  line-height: 1.8em;
+  padding: 1em 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $clouds;
+  font-family: $main_font;
+  font-size: 16px;
+}
+
+.column {
+  @include outer-container;
+  padding: 4em 1em;
+  text-align: justify;
+}
+
+// Layout
+
+.main-header {
+  background: $midnight_blue;
+
+  .column {
+    padding: 2em 1em;
+
+    @include media($small) {
+      padding: 0;
+    }
+  }
+
+  .logo {
+    @include span-columns(2);
+
+    .logo-link {
+      color: $clouds;
+      display: inline-block;
+    }
+
+    .logo-text {
+      display: block;
+      background: $turquoise;
+      font-family: $helvetica;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      padding-top: 0.5em;
+      height: 100px;
+      width: 100px;
+      border-radius: 0.2em;
+      font-size: 3.2em;
+      text-align: center;
+      overflow: hidden;
+      text-shadow: 1px 0px 0 $green_sea, 1px 1px 0 $green_sea, 2px 2px 0 $green_sea, 3px 3px 0 $green_sea, 4px 4px 0 $green_sea, 5px 5px 0 $green_sea, 6px 6px 0 $green_sea, 7px 7px 0 $green_sea, 8px 8px 0 $green_sea, 9px 9px 0 $green_sea, 10px 10px 0 $green_sea, 11px 11px 0 $green_sea, 12px 12px 0 $green_sea, 13px 13px 0 $green_sea, 14px 14px 0 $green_sea, 15px 15px 0 $green_sea, 16px 16px 0 $green_sea, 17px 17px 0 $green_sea, 18px 18px 0 $green_sea, 19px 19px 0 $green_sea, 20px 20px 0 $green_sea, 21px 21px 0 $green_sea, 22px 22px 0 $green_sea, 23px 23px 0 $green_sea, 24px 24px 0 $green_sea, 25px 25px 0 $green_sea, 26px 26px 0 $green_sea, 27px 27px 0 $green_sea, 28px 28px 0 $green_sea, 29px 29px 0 $green_sea, 30px 30px 0 $green_sea, 31px 31px 0 $green_sea, 32px 32px 0 $green_sea, 33px 33px 0 $green_sea, 37px 37px 0 $green_sea, 39px 39px 0 $green_sea, 42px 42px 0 $green_sea, 45px 45px 0 $green_sea;
+    }
+
+    @include media($full) {
+      @include span-columns(12);
+      text-align: center;
+    }
+
+    @include media($small) {
+      padding: 1em 0;
+    }
+
+  }
+
+  .mobile-menu {
+    @include span-columns(12);
+    display: none;
+    text-align: center;
+    padding-bottom: 1em;
+
+    @include media($small) {
+      display: inline-block;
+    }
+  }
+
+  .desktop-nav-links {
+
+    @include span-columns(10);
+    margin: 0;
+    padding-top: 2.6em;
+
+    li {
+      float: right;
+      padding: 0 1.6em;
+      font-size: 1.2em;
+      display: inline;
+      text-transform: uppercase;
+
+      a {
+        color: $clouds;
+      }
+
+      a:hover {
+        color: $clouds;
+        border-bottom: 2px solid $green_sea;
+      }
+
+    }
+
+    @include media($full) {
+      @include span-columns(12);
+      text-align: center;
+      padding-top: 2em;
+
+      li {
+          padding: 0 0.5em;
+          float: none;
+        }
+    }
+
+    @include media($small) {
+      display: none;
+    }
+
+  }
+
+}
+
+.mobile-nav-links {
+  @include span-columns(12);
+  display: none;
+
+  a {
+    display: block;
+    background: $midnight_blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border-top: 1px dotted #1e2d3d;
+  }
+
+  a:hover {
+    background: $silver;
+  }
+
+  a:last-child {
+    border-top: 1px dotted #1e2d3d;
+  }
+
+}
+
+.intro {
+  background: $turquoise;
+  color: $clouds;
+
+  .column {
+    padding: 3em 1em;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+
+    @include media($full) {
+      font-size: 2em;
+    }
+
+    @include media($small) {
+      font-size: 1.7em;
+    }
+
+  }
+
+}
+
+.about-me {
+  background: $clouds;
+  color: $wet_asphalt;
+}
+
+.about-site {
+  background: $wet_asphalt;
+}
+
+.recent-posts {
+  background: $green_sea;
+
+  section {
+    overflow: hidden;
+  }
+
+  article {
+    width: 47%;
+    float: left;
+  }
+
+  article:nth-child(even) {
+    float: right;
+  }
+
+  @include media($medium) {
+    article {
+      width: 100%;
+      float: none;
+    }
+  }
+
+}
+
+.contact {
+  background: $clouds;
+  color: $wet_asphalt;
+
+  .column {
+    text-align: center;
+  }
+
+  .button-holder {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
+
+.main-footer {
+  background: $midnight_blue;
+
+  .column {
+    text-align: center;
+  }
+
+  p {
+    padding: 0.5em 0;
+  }
+
+  [class^="flaticon-"]:before {
+    font-size: 2em;
+  }
+}
+
